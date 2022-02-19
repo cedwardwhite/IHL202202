@@ -18,20 +18,20 @@ source-code: https://github.com/CollectionBuilder/collectionbuilder-csv
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: CollectionBuilder CSV
+title: My Japanese Hanga - Lavenberg Collection of Japanese Prints
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Digital Collection Magic with Static Web Technologies
+tagline: My Japanese Hanga
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "CollectionBuilder-CSV is a template for creating digital collection exhibits using static web technology."
+description: "My Japanese Hanga. Irwin Lavenberg Collection of Japanese Prints at the University of Oregon Museum of Art"
 # keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
-keywords: idaho;history;inland northwest
+keywords: japanese;hanga;lavenberg;prints
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
-author: CollectionBuilder
+author: University of Oregon with compliments to the University of Idaho 
 # Organization branding
-organization-name: "Digital Initiatives, University of Idaho Library"
-organization-link: https://www.lib.uidaho.edu/digital/
-organization-logo-banner: https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png
+organization-name: "University of Oregon Art museum (JSMA) Collections, University of Oregon"
+organization-link: https://jsmacollection.uoregon.edu/
+organization-logo-banner: https://jsma.uoregon.edu/sites/all/themes/responsive/logo.png
 organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png
 
 ##########
