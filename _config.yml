@@ -1,54 +1,61 @@
 ##########
-# collectionbuilder-csv
+# collectionbuilder-sa
 # Jekyll Digital Collection Generator
-# https://github.com/CollectionBuilder/collectionbuilder-csv
+# https://github.com/CollectionBuilder/collectionbuilder-sa
 ##########
 
 ##########
 # URL VARIABLES
 #
 # site domain, full URL to the production location of your collection
-url: 
+url: https://pages.uoregon.edu/
 # path to location on the domain if necessary e.g. /digital/hjccc
-baseurl: 
+baseurl: /cew
 # location of code, the full url to your github repository
-source-code: https://github.com/CollectionBuilder/collectionbuilder-csv
+source-code: https://github.com/CollectionBuilder/collectionbuilder-sa
 
 ##########
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: My Japanese Hanga - Lavenberg Collection of Japanese Prints
+title: My Japanese Hanga Collection
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: My Japanese Hanga
+tagline: University of Oregon, Collection of Irwin Lavenberg - Japanese prints
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "My Japanese Hanga. Irwin Lavenberg Collection of Japanese Prints at the University of Oregon Museum of Art"
+description: <a href="http://www.myjapanesehanga.com/"target="_blank">A distillation of data from original myjapanesehanga.com website</a>
 # keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
-keywords: japanese;hanga;lavenberg;prints
+keywords: japanese;hanga;woodblock print;ukiyo-e;myjapanesehanga
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
-author: University of Oregon with compliments to the University of Idaho 
+author: University of Oregon, JSMA, based on the original cataloging of Irwin Lavenberg
 # Organization branding
-organization-name: "University of Oregon Art museum (JSMA) Collections, University of Oregon"
-organization-link: https://jsmacollection.uoregon.edu/
+organization-name: "Jordan Schnitzer Museum of Art, University of Oregon"
+organization-link: https://jsma.uoregon.edu/
 organization-logo-banner: https://jsma.uoregon.edu/sites/all/themes/responsive/logo.png
-organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png
+organization-logo-nav: https://jsma.uoregon.edu/sites/all/themes/responsive/logo.png
 
 ##########
 # COLLECTION SETTINGS
 #
-# Set the metadata for your collection (the name of the CSV file in your _data directory that describes the objects in your collection) 
-# Use the filename of your CSV **without** the ".csv" extension! E.g. _data/demo-metadata.csv --> "demo-metadata"
+# provide location of the digital objects folder,
+# If using local folder, dir name with proceeding slash. If using external web location, provide full URL
+objects: /objects 
+# choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
 metadata: ihl-metadata
-# page generation settings [optional!]
-# [optional: only used if you need to tweak CB defaults or generate from more than one data file]
-# page_gen:
-#   - data: 'ihl-metadata'
-#     template: 'item'
-#     name: 'objectid'
-#     dir: 'items'
-#     extension: 'html' 
-#     filter: 'objectid'  
+# page generation settings 
+# "data" value must be the name of the metadata file (other values should be not be changed)
+page_gen:
+  - data: 'ihl-metadata'
+    template: 'item'
+    name: 'objectid'
+    dir: 'items'
+    extension: 'html' 
+    filter: 'objectid' 
+  - data: 'artist-metadata'
+    template: 'artist'
+    name: 'objectid'
+    dir: 'artists'
+    extension: 'html'
 
 ##########
 # GOOGLE SERVICES [optional!]
@@ -62,7 +69,7 @@ metadata: ihl-metadata
 # ROBOTS EXCLUDE
 #
 # set noindex to true if you do NOT want Google to index your site
-# noindex: true 
+noindex: true 
 
 ##########
 # BUILD SETTINGS 
